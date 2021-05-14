@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Recursive', sans-serif;
+    font-size: 20px;
+}
+body{
+    height:calc(100vh - 50px);
+}
+
+.text{
+    margin-left: calc(50% - 100px);
+    margin-top: 15%;
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: dotted black 5px;
+    background-color:transparent;
+    
+}
+input:focus{
+    outline: none;
+}
