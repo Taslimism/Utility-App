@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/unit-converter/style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1>CURRENCYer</h1>
+    <div class="container">
+        <div class="input">
+            <h3>Choose currency to convert</h3>
+            <label for="from">From :</label>
+            <select id="from">
+                <option value = "inr">Indian Rupee</option>
+                <option value = "usd">US Dollars</option>
+                <option value = "bhd">Bahraini Dinar</option>
+                <option value = "aed">UAE Dirham</option>
+            </select>
+            <br>
+            <label for="to">To :</label>
+            <select id="to">
+                <option value = "inr">Indian Rupee</option>
+                <option value = "usd">US Dollars</option>
+                <option value = "bhd">Bahraini Dinar</option>
+                <option value = "aed">UAE Dirham</option>
+            </select>
+            <p>Please enter value below</p>
+            <input type="number" name="" id="input-currency" class="input-value">
+        </div>
+        <div class="output">
+            <p>Converted Value is</p>
+            <div class="result"></div>
+        </div>
+    </div>
+    <script src="/unit-converter/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/unit-converter/style.css">
+    <title>Length</title>
+</head>
+<body>
+    <h1>LENGTHer</h1>
+    <div class="container">
+        <div class="input">
+            <h3>Choose length to convert</h3>
+            <label for="from">From :</label>
+            <select id="from">
+                <option value = "km">Kilometer(s)</option>
+                <option value = "m">Meter(s)</option>
+                <option value = "cm">Centimeter(s)</option>
+                <option value = "mm">Millimeter(s)</option>
+            </select>
+            <br>
+            <label for="to">To :</label>
+            <select id="to">
+                <option value = "inr">Kilometer(s)</option>
+                <option value = "m">Meter(s)</option>
+                <option value = "cm">Centimeter(s)</option>
+                <option value = "mm">Millimeter(s)</option>
+            </select>
+            <p>Please enter value below</p>
+            <input type="number" name="" id="input-length" class="input-value">
+        </div>
+        <div class="output">
+            <p>Converted Value is</p>
+            <div class="result"></div>
+        </div>
+    </div>
+    <script src="/unit-converter/scriptL.js"></script>
+</body>
+</html>
