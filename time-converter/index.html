@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/time-converter/style.css" />
+
+    <title>Time</title>
+  </head>
+  <body>
+    <h1>TIMEer</h1>
+    <div class="text">
+      <div class="input">
+        <p>Please enter Epoch time in seconds</p>
+        <input type="number" id="sentence"></input>
+        <br>
+        <button id = "human-readable"> <p>To Human Readable Form <strong>&gt;</strong></p> </button>
+        
+      </div>
+
+      <div class="output">
+        <p>Year : <input type="number" class="year"></input></p>
+        <p>Month : <input type="number" class="month"></input></p>
+        <p>Day : <input type="number" class="day"></input></p>
+        <p>Hour : <input type="number" class="hour"></input></p>
+        <p>Minute : <input type="number" class="min"></input></p>
+        <p>Sec : <input type="number" class="sec"></input></p>
+        
+        <button id = 'epoch'> <p><strong>&lt</strong> To Epoch Form</p></button>
+      </div>
+    </div>
+    <script src="/time-converter/script.js"></script>
+  </body>
+</html>

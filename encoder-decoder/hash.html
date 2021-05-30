@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="/encoder-decoder/style.css">
+
+    <title>SHA256</title>
+  </head>
+  <body>
+    <h1>SHAer</h1>
+    <div class="text">
+      <div class="input">
+        <p>Please type or paste below</p>
+        <textarea id="sentence" cols="50" rows="15"></textarea>
+        <button id="sha1" class="btn">SHA-1</button>
+        <button id="sha256" class="btn">SHA-256</button>
+        <button id="sha512" class="btn">SHA-512</button>
+        <button id="md5" class="btn">MD5</button>
+        <button id = 'encoder64' class='btn'>Base64 Enc</button>
+        <button id = 'decoder64' class='btn'>Base64 Dec</button>
+      </div>
+
+      <div class="output">
+        <p>Hashed value is</p>
+        <div class="result"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="/encoder-decoder/scriptHash.js"></script>
+  </body>
+</html>

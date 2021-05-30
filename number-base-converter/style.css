@@ -9,7 +9,7 @@ body {
   font-size: 20px;
   height: 100vh;
   width: 100vw;
-  background-color: #f7e69a;
+  background-color: #1b1a17;
 }
 .container {
   margin: 7% 10%;
@@ -24,8 +24,8 @@ body {
   padding: 10% 12%;
   text-align: left;
   line-height: 80px;
-  color: #ff8303;
-  background-color: #1b1a17;
+  color: #fff;
+  background-color: #2ec771;
 }
 .to {
   position: relative;

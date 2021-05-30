@@ -35,7 +35,7 @@ window.addEventListener('load', () => {
         } else if(to.value === 'km'){
             result.textContent = (input.value / 100000).toFixed(2);
         } else if(to.value === 'mm'){
-            result.textContent = (input.value / 10).toFixed(2);
+            result.textContent = (input.value * 10).toFixed(2);
         } else {
             result.textContent = input.value;
         }
@@ -45,7 +45,7 @@ window.addEventListener('load', () => {
         if(to.value === 'm'){
             result.textContent = (input.value / 1000).toFixed(2);
         } else if(to.value === 'cm'){
-            result.textContent = (input.value / 100000).toFixed(2);
+            result.textContent = (input.value / 10).toFixed(2);
         } else if(to.value === 'km'){
             result.textContent = (input.value / 1000000).toFixed(2);
         } else {

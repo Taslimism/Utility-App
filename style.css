@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin:0;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+.container>div{
+   flex:1;
+   text-align: center;
+   padding-top: 3%;
+}
+
+.btn1{
+    background-color: #1b1a17;
+}
+.btn2{
+    background-color: #9b59bf;
+}
+.btn3{
+    background-color: #0000ff;
+}
+.btn4{
+    background-color: #2ec771;
+}
+.btn5{
+    background-color: #f1c404;
+}
+.btn6{
+    background-color: #e74c3c;
+}
+
+button{
+    border: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+    margin-top: 50px;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Berkshire Swash', cursive;
+    word-spacing: 3px;
+    letter-spacing: 4px;
+    
+}

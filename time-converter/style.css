@@ -2,7 +2,6 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 p{
     font-weight: bolder;
@@ -31,19 +30,51 @@ body{
 }
 .input{
     padding : 5% 21%;
-    
-    background-color: #9b59bf;
+    background-color: #e74c3c;
     color: #eeebdd;
+    position: relative;
+}
+.input input{
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10%;
+    
 }
 .output{
-    overflow: scroll;
-    padding : 7% 16%;  
+    padding : 7% 13% 0 13%;    
 }
 .output>p{
     margin: 30px;
+    position: relative;
+    
+}
+.output input{
+    position: absolute;
+    right: 90px;
 }
 .input>p{
     text-align: center;
     margin-top: 35px;
-    margin-bottom: 70px;
 }
+.input button{
+    position: absolute;
+    bottom: 5%;
+    right: 17%;
+}
+button{
+    background-color: #fb9300;
+    padding: 0.5em;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.output button{
+    color: #fb9300;
+    background-color: black;
+}
+
+
+
+
