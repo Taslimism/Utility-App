@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  align-items: center;
+  background-color: #fafafa;
+  min-height: 100vh;
+  background-color: gold;
+}
+.ip-container {
+  background-color: black;
+  color: gold;
+  text-align: center;
+  margin: 200px 100px;
+  border-radius: 10px;
+  line-height: 30px;
+  font-size: 18px;
+}
+.main-header {
+  background-color: white;
+}
+
+.page-title {
+  position: absolute;
+  left: 4px;
+  top: 45px;
+}
+.ip {
+  color: white;
+  background-color: brown;
+  height: 100%;
+  width: 100px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 70px 20px;
+  }
+}

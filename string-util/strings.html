@@ -5,15 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/string-util/style.css" />
+    <link rel="stylesheet" href="./../style.css" />
 
     <title>String</title>
   </head>
   <body>
+    <header class="main-header string-header">
+      <h1 class="title">
+        <a class="brand-name" href="./../index.html">Utitlity Apps</a>
+      </h1>
+      <div id="hamburger-menu" class="hamburger-menu">
+        <div></div>
+      </div>
+      <nav id="hamburger-nav" class="navigation hamburger">
+        <div>
+          <a class="link color" href="/color-converter/colors.html"
+            >RGB to HEX</a
+          >
+        </div>
+        <div>
+          <a class="link string" href="/string-util/strings.html"
+            >String Utility</a
+          >
+        </div>
+        <div id="dropdown-unit" class="dropdown">
+          <a class="link unit" href="/unit-converter/converter.html"
+            >Unit Converter</a
+          >
+          <a class="link currency" href="/unit-converter/currency.html"
+            >Currency Converter</a
+          >
+          <a class="link length" href="/unit-converter/length.html"
+            >Length Converter</a
+          >
+          <a class="link mass" href="/unit-converter/mass.html"
+            >Mass Converter</a
+          >
+        </div>
+        <div>
+          <a class="link ip" href="/ip-address/index.html">IP Address</a>
+        </div>
+        <div>
+          <a class="link stopwatch" href="/stop-watch/index.html">Stopwatch</a>
+        </div>
+        <div>
+          <a class="link digit" href="/number-base-converter/num-conv.html"
+            >Digit Converter</a
+          >
+        </div>
+        <div id="dropdown-encdec" class="dropdown">
+          <a class="link encdec" href="/encoder-decoder/index.html"
+            >Encrypt & Hash</a
+          >
+          <a class="link encdec" href="/encoder-decoder/enc-dec.html"
+            >Encoder Decoder</a
+          >
+          <a class="link encdec" href="/encoder-decoder/hash.html">Hashing</a>
+        </div>
+        <div>
+          <a class="link timeConverter" href="/time-converter/index.html"
+            >Time Converter</a
+          >
+        </div>
+      </nav>
+    </header>
     <h1>STRINGer</h1>
     <div class="text">
       <div class="input">
         <p>Please type or paste below</p>
-        <textarea name="sentence" id="sentence" cols="50" rows="15"></textarea>
+        <textarea name="sentence" class="text-area" id="sentence"></textarea>
       </div>
 
       <div class="output">
@@ -25,5 +85,6 @@
       </div>
     </div>
     <script src="/string-util/script.js"></script>
+    <script src="./../script.js"></script>
   </body>
 </html>

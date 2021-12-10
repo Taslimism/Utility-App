@@ -1,40 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/unit-converter/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/unit-converter/style.css" />
+    <link rel="stylesheet" href="./../style.css" />
     <title>Weight Converter</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="main-header unit-header">
+      <h1 class="title">
+        <a class="brand-name" href="./../index.html">Utitlity Apps</a>
+      </h1>
+      <div id="hamburger-menu" class="hamburger-menu">
+        <div></div>
+      </div>
+      <nav id="hamburger-nav" class="navigation hamburger">
+        <div>
+          <a class="link color" href="/color-converter/colors.html"
+            >RGB to HEX</a
+          >
+        </div>
+        <div>
+          <a class="link string" href="/string-util/strings.html"
+            >String Utility</a
+          >
+        </div>
+        <div id="dropdown-unit" class="dropdown">
+          <a class="link unit" href="/unit-converter/converter.html"
+            >Unit Converter</a
+          >
+          <a class="link currency" href="/unit-converter/currency.html"
+            >Currency Converter</a
+          >
+          <a class="link length" href="/unit-converter/length.html"
+            >Length Converter</a
+          >
+          <a class="link mass" href="/unit-converter/mass.html"
+            >Mass Converter</a
+          >
+        </div>
+        <div>
+          <a class="link ip" href="/ip-address/index.html">IP Address</a>
+        </div>
+        <div>
+          <a class="link stopwatch" href="/stop-watch/index.html">Stopwatch</a>
+        </div>
+        <div>
+          <a class="link digit" href="/number-base-converter/num-conv.html"
+            >Digit Converter</a
+          >
+        </div>
+        <div id="dropdown-encdec" class="dropdown">
+          <a class="link encdec" href="/encoder-decoder/index.html"
+            >Encrypt & Hash</a
+          >
+          <a class="link encdec" href="/encoder-decoder/enc-dec.html"
+            >Encoder Decoder</a
+          >
+          <a class="link encdec" href="/encoder-decoder/hash.html">Hashing</a>
+        </div>
+        <div>
+          <a class="link timeConverter" href="/time-converter/index.html"
+            >Time Converter</a
+          >
+        </div>
+      </nav>
+    </header>
     <h1>MASSer</h1>
     <div class="container">
-        <div class="input">
-            <h3>Choose weights to convert</h3>
-            <label for="from">From :</label>
-            <select id="from">
-                <option value = "kg">Kilogram(kg)</option>
-                <option value = "g">Gram(g)</option>
-                <option value = "ton">Ton(t)</option>
-                <option value = "pound">Pound(lbs)</option>
-            </select>
-            <br>
-            <label for="to">To :</label>
-            <select id="to">
-                <option value = "kg">Kilogram(kg)</option>
-                <option value = "g">Gram(g)</option>
-                <option value = "ton">Ton(t)</option>
-                <option value = "pound">Pound(lbs)</option>
-            </select>
-            <p>Please enter value below</p>
-            <input type="number" name="" id="input-weight" class="input-value">
+      <div class="input">
+        <h3>Choose weights to convert</h3>
+        <div class="options">
+          <label for="from">From :</label>
+          <select id="from">
+            <option value="kg">Kilogram(kg)</option>
+            <option value="g">Gram(g)</option>
+            <option value="ton">Ton(t)</option>
+            <option value="pound">Pound(lbs)</option>
+          </select>
         </div>
-        <div class="output">
-            <p>Converted Value is</p>
-            <div class="result"></div>
+
+        <div class="options">
+          <label for="to">To :</label>
+          <select id="to">
+            <option value="kg">Kilogram(kg)</option>
+            <option value="g">Gram(g)</option>
+            <option value="ton">Ton(t)</option>
+            <option value="pound">Pound(lbs)</option>
+          </select>
         </div>
+        <p>Please enter value below</p>
+        <input type="number" name="" id="input-weight" class="input-value" />
+      </div>
+      <div class="output">
+        <p>Converted Value is</p>
+        <div class="result"></div>
+      </div>
     </div>
     <script src="/unit-converter/scriptW.js"></script>
-</body>
+    <script src="./../script.js"></script>
+  </body>
 </html>

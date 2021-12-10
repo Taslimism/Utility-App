@@ -1,49 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
-*{
-    box-sizing: border-box;
-    font-family: 'Recursive', sans-serif;
-    font-size: 20px;
-    font-weight: 900;
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Recursive", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
 }
-body{
-    height:100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  height: 100vh;
+  margin: 0;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  align-items: center;
 }
-h1{
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    padding: 0.5em;
-    position: absolute;
-    left:5px;
-    top:4px;
+.color-title {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5em;
+  position: absolute;
+  left: 5px;
+  top: 30px;
 }
 
-.text{
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    align-items: center;
-    line-height: 30px;
-    border: 1px solid black;
-    color: white;
-    background-color: #1f1f1f;
-    border-radius: 10px;
+.text {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 60%;
+  margin: 100px auto;
+  align-items: center;
+  line-height: 30px;
+  border: 1px solid black;
+  color: white;
+  background-color: #1f1f1f;
+  border-radius: 10px;
 }
-input{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: dotted black 5px;
-    background-color:transparent;
-    caret-color : rgb(255, 0, 149);
-    
-    
+input {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: dotted black 5px;
+  background-color: transparent;
+  caret-color: rgb(255, 0, 149);
 }
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
 }

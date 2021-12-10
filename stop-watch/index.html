@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/unit-converter/style.css" />
+    <link rel="stylesheet" href="/stop-watch/style.css" />
     <link rel="stylesheet" href="./../style.css" />
-    <title>Encrypt & Hash</title>
+    <title>Stop-Watch</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header header-title">
       <h1 class="title">
         <a class="brand-name" href="./../index.html">Utitlity Apps</a>
       </h1>
@@ -45,7 +45,7 @@
           <a class="link ip" href="/ip-address/index.html">IP Address</a>
         </div>
         <div>
-          <a class="link stopwatch" href="/stop-watch/index.html">Stopwatch</a>
+          <a class="link" href="/stop-watch/index.html">Stopwatch</a>
         </div>
         <div>
           <a class="link digit" href="/number-base-converter/num-conv.html"
@@ -68,14 +68,28 @@
         </div>
       </nav>
     </header>
-    <div class="buttons">
-      <button class="btn1">
-        <a href="/encoder-decoder/enc-dec.html">Encoder-Decoder</a>
-      </button>
-      <button class="btn2">
-        <a href="/encoder-decoder/hash.html">Hashing</a>
-      </button>
+    <h1 class="page-title">Stop Watch</h1>
+    <div class="watch">
+      <div id="display" class="stopwatch">
+        <div class="time">
+          <span id="hours">00 :</span>
+          <span id="minutes">00 :</span>
+          <span id="seconds">00</span>
+        </div>
+      </div>
+      <div class="control">
+        <button class="btn" id="stop">
+          <img src="/stop-watch/images/pause/1x/pause.png" alt="" />
+        </button>
+        <button class="btn" id="start">
+          <img src="/stop-watch/images/play/1x/play.png" alt="" />
+        </button>
+        <button class="btn" id="reset">
+          <img src="/stop-watch/images/reset/1x/reset.png" alt="" />
+        </button>
+      </div>
     </div>
+    <script src="/stop-watch/script.js"></script>
     <script src="./../script.js"></script>
   </body>
 </html>
