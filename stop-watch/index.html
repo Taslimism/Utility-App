@@ -4,89 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stop-watch/style.css" />
     <link rel="stylesheet" href="./../style.css" />
+    <link rel="stylesheet" href="/stop-watch/style.css" />
+
     <title>Stop-Watch</title>
   </head>
-  <body>
-    <header class="main-header header-title">
-      <h1 class="title">
-        <a class="brand-name" href="./../index.html">Utitlity Apps</a>
-      </h1>
-      <div id="hamburger-menu" class="hamburger-menu">
-        <div></div>
-      </div>
-      <nav id="hamburger-nav" class="navigation hamburger">
-        <div>
-          <a class="link color" href="/color-converter/colors.html"
-            >RGB to HEX</a
-          >
+  <body class="stop-watch-body">
+    <div class="wrapper">
+      <header class="main-header header-title">
+        <h1 class="title">
+          <a class="brand-name" href="./../index.html">Utitlity Apps</a>
+        </h1>
+        <div id="hamburger-menu" class="hamburger-menu">
+          <div></div>
         </div>
-        <div>
-          <a class="link string" href="/string-util/strings.html"
-            >String Utility</a
-          >
+        <nav id="hamburger-nav" class="navigation hamburger">
+          <div>
+            <a class="link color" href="/color-converter/colors.html"
+              >RGB to HEX</a
+            >
+          </div>
+          <div>
+            <a class="link string" href="/string-util/strings.html"
+              >String Utility</a
+            >
+          </div>
+          <div id="dropdown-unit" class="dropdown">
+            <a class="link unit" href="/unit-converter/converter.html"
+              >Unit Converter</a
+            >
+            <a class="link currency" href="/unit-converter/currency.html"
+              >Currency Converter</a
+            >
+            <a class="link length" href="/unit-converter/length.html"
+              >Length Converter</a
+            >
+            <a class="link mass" href="/unit-converter/mass.html"
+              >Mass Converter</a
+            >
+          </div>
+          <div>
+            <a class="link ip" href="/ip-address/index.html">IP Address</a>
+          </div>
+          <div>
+            <a class="link" href="/stop-watch/index.html">Stopwatch</a>
+          </div>
+          <div>
+            <a class="link digit" href="/number-base-converter/num-conv.html"
+              >Digit Converter</a
+            >
+          </div>
+          <div id="dropdown-encdec" class="dropdown">
+            <a class="link encdec" href="/encoder-decoder/index.html"
+              >Encrypt & Hash</a
+            >
+            <a class="link encdec" href="/encoder-decoder/enc-dec.html"
+              >Encoder Decoder</a
+            >
+            <a class="link encdec" href="/encoder-decoder/hash.html">Hashing</a>
+          </div>
+          <div>
+            <a class="link timeConverter" href="/time-converter/index.html"
+              >Time Converter</a
+            >
+          </div>
+        </nav>
+      </header>
+      <h1 class="page-title">Stop Watch</h1>
+      <div class="watch">
+        <div id="display" class="stopwatch">
+          <div class="time">
+            <span id="hours">00 :</span>
+            <span id="minutes">00 :</span>
+            <span id="seconds">00</span>
+          </div>
         </div>
-        <div id="dropdown-unit" class="dropdown">
-          <a class="link unit" href="/unit-converter/converter.html"
-            >Unit Converter</a
-          >
-          <a class="link currency" href="/unit-converter/currency.html"
-            >Currency Converter</a
-          >
-          <a class="link length" href="/unit-converter/length.html"
-            >Length Converter</a
-          >
-          <a class="link mass" href="/unit-converter/mass.html"
-            >Mass Converter</a
-          >
+        <div class="control">
+          <button class="btn" id="stop">
+            <img src="/stop-watch/images/pause/1x/pause.png" alt="" />
+          </button>
+          <button class="btn" id="start">
+            <img src="/stop-watch/images/play/1x/play.png" alt="" />
+          </button>
+          <button class="btn" id="reset">
+            <img src="/stop-watch/images/reset/1x/reset.png" alt="" />
+          </button>
         </div>
-        <div>
-          <a class="link ip" href="/ip-address/index.html">IP Address</a>
-        </div>
-        <div>
-          <a class="link" href="/stop-watch/index.html">Stopwatch</a>
-        </div>
-        <div>
-          <a class="link digit" href="/number-base-converter/num-conv.html"
-            >Digit Converter</a
-          >
-        </div>
-        <div id="dropdown-encdec" class="dropdown">
-          <a class="link encdec" href="/encoder-decoder/index.html"
-            >Encrypt & Hash</a
-          >
-          <a class="link encdec" href="/encoder-decoder/enc-dec.html"
-            >Encoder Decoder</a
-          >
-          <a class="link encdec" href="/encoder-decoder/hash.html">Hashing</a>
-        </div>
-        <div>
-          <a class="link timeConverter" href="/time-converter/index.html"
-            >Time Converter</a
-          >
-        </div>
-      </nav>
-    </header>
-    <h1 class="page-title">Stop Watch</h1>
-    <div class="watch">
-      <div id="display" class="stopwatch">
-        <div class="time">
-          <span id="hours">00 :</span>
-          <span id="minutes">00 :</span>
-          <span id="seconds">00</span>
-        </div>
-      </div>
-      <div class="control">
-        <button class="btn" id="stop">
-          <img src="/stop-watch/images/pause/1x/pause.png" alt="" />
-        </button>
-        <button class="btn" id="start">
-          <img src="/stop-watch/images/play/1x/play.png" alt="" />
-        </button>
-        <button class="btn" id="reset">
-          <img src="/stop-watch/images/reset/1x/reset.png" alt="" />
-        </button>
       </div>
     </div>
     <script src="/stop-watch/script.js"></script>

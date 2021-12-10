@@ -3,6 +3,12 @@ const nav = document.getElementById('hamburger-nav');
 const unitConverterMenu = document.getElementById('dropdown-unit');
 const encDecMenu = document.getElementById('dropdown-encdec')
 
+let mq;
+if (matchMedia) {
+    mq = window.matchMedia("(max-width: 1050px)");
+    mq.addListener(WidthChange);
+    WidthChange(mq);
+}
 hamburger.addEventListener('click', () => {
     if (hamburger.classList[1] === 'clicked') {
         hamburger.classList.remove('clicked');
@@ -14,12 +20,14 @@ hamburger.addEventListener('click', () => {
 })
 
 unitConverterMenu.addEventListener('mouseover', () => {
-    unitConverterMenu.classList.add('unit-converters');
+    if (!mq.matches)
+        unitConverterMenu.classList.add('unit-converters');
 
 })
 
 encDecMenu.addEventListener('mouseover', () => {
-    encDecMenu.classList.add('unit-converters-eh');
+    if (!mq.matches)
+        encDecMenu.classList.add('unit-converters-eh');
 })
 
 unitConverterMenu.addEventListener('mouseout', () => {
@@ -29,3 +37,15 @@ unitConverterMenu.addEventListener('mouseout', () => {
 encDecMenu.addEventListener('mouseout', () => {
     encDecMenu.classList.remove('unit-converters-eh');
 })
+
+
+
+// media query change
+function WidthChange(mq) {
+    if (mq.matches) {
+
+        encDecMenu.classList.remove('unit-converters-eh');
+        unitConverterMenu.classList.remove('unit-converters');
+    }
+
+}

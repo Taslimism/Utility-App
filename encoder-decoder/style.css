@@ -116,6 +116,6 @@ body {
 }
 .main-header.enc-dec-header,
 .main-header.hash-header,
-.main-header.hash-header.page-header {
+.main-header.page-header#page-header {
   background-color: white;
 }

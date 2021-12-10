@@ -9,93 +9,97 @@
     <title>Base Converter</title>
   </head>
   <body>
-    <header class="main-header num-header">
-      <h1 class="title"><a class="brand-name" href="#">Utitlity Apps</a></h1>
-      <div id="hamburger-menu" class="hamburger-menu">
-        <div></div>
-      </div>
-      <nav id="hamburger-nav" class="navigation hamburger">
-        <div>
-          <a class="link color" href="/color-converter/colors.html"
-            >RGB to HEX</a
-          >
+    <div class="wrapper">
+      <header class="main-header num-header">
+        <h1 class="title"><a class="brand-name" href="#">Utitlity Apps</a></h1>
+        <div id="hamburger-menu" class="hamburger-menu">
+          <div></div>
         </div>
-        <div>
-          <a class="link string" href="/string-util/strings.html"
-            >String Utility</a
-          >
+        <nav id="hamburger-nav" class="navigation hamburger">
+          <div>
+            <a class="link color" href="/color-converter/colors.html"
+              >RGB to HEX</a
+            >
+          </div>
+          <div>
+            <a class="link string" href="/string-util/strings.html"
+              >String Utility</a
+            >
+          </div>
+          <div id="dropdown-unit" class="dropdown">
+            <a class="link unit" href="/unit-converter/converter.html"
+              >Unit Converter</a
+            >
+            <a class="link currency" href="/unit-converter/currency.html"
+              >Currency Converter</a
+            >
+            <a class="link length" href="/unit-converter/length.html"
+              >Length Converter</a
+            >
+            <a class="link mass" href="/unit-converter/mass.html"
+              >Mass Converter</a
+            >
+          </div>
+          <div>
+            <a class="link ip" href="/ip-address/index.html">IP Address</a>
+          </div>
+          <div>
+            <a class="link stopwatch" href="/stop-watch/index.html"
+              >Stopwatch</a
+            >
+          </div>
+          <div>
+            <a class="link digit" href="/number-base-converter/num-conv.html"
+              >Digit Converter</a
+            >
+          </div>
+          <div id="dropdown-encdec" class="dropdown">
+            <a class="link encdec" href="/encoder-decoder/index.html"
+              >Encrypt & Hash</a
+            >
+            <a class="link encdec" href="/encoder-decoder/enc-dec.html"
+              >Encoder Decoder</a
+            >
+            <a class="link encdec" href="/encoder-decoder/hash.html">Hashing</a>
+          </div>
+          <div>
+            <a class="link timeConverter" href="/time-converter/index.html"
+              >Time Converter</a
+            >
+          </div>
+        </nav>
+      </header>
+      <h1>CONVERTer</h1>
+      <div class="num-container">
+        <div class="input">
+          <div class="options">
+            <label for="from">From : </label>
+            <select class="option from">
+              <option class="bin" value="binary">Binary</option>
+              <option class="oct" value="octal">Octal</option>
+              <option class="deci" value="decimal">Decimal</option>
+              <option class="hex" value="hexadecimal">Hexadecimal</option>
+            </select>
+          </div>
+          <div class="options">
+            <label for="to">To : </label>
+            <select class="option to">
+              <option class="bin" value="binary">Binary</option>
+              <option class="oct" value="octal">Octal</option>
+              <option class="deci" value="decimal">Decimal</option>
+              <option class="hex" value="hexadecimal">Hexadecimal</option>
+            </select>
+          </div>
+          <div class="val-input">
+            <label for="input">Enter Value to Convert</label>
+            <input type="text" name="" id="input" />
+          </div>
         </div>
-        <div id="dropdown-unit" class="dropdown">
-          <a class="link unit" href="/unit-converter/converter.html"
-            >Unit Converter</a
-          >
-          <a class="link currency" href="/unit-converter/currency.html"
-            >Currency Converter</a
-          >
-          <a class="link length" href="/unit-converter/length.html"
-            >Length Converter</a
-          >
-          <a class="link mass" href="/unit-converter/mass.html"
-            >Mass Converter</a
-          >
-        </div>
-        <div>
-          <a class="link ip" href="/ip-address/index.html">IP Address</a>
-        </div>
-        <div>
-          <a class="link stopwatch" href="/stop-watch/index.html">Stopwatch</a>
-        </div>
-        <div>
-          <a class="link digit" href="/number-base-converter/num-conv.html"
-            >Digit Converter</a
-          >
-        </div>
-        <div id="dropdown-encdec" class="dropdown">
-          <a class="link encdec" href="/encoder-decoder/index.html"
-            >Encrypt & Hash</a
-          >
-          <a class="link encdec" href="/encoder-decoder/enc-dec.html"
-            >Encoder Decoder</a
-          >
-          <a class="link encdec" href="/encoder-decoder/hash.html">Hashing</a>
-        </div>
-        <div>
-          <a class="link timeConverter" href="/time-converter/index.html"
-            >Time Converter</a
-          >
-        </div>
-      </nav>
-    </header>
-    <h1>CONVERTer</h1>
-    <div class="num-container">
-      <div class="input">
-        <div class="options">
-          <label for="from">From : </label>
-          <select class="option from">
-            <option class="bin" value="binary">Binary</option>
-            <option class="oct" value="octal">Octal</option>
-            <option class="deci" value="decimal">Decimal</option>
-            <option class="hex" value="hexadecimal">Hexadecimal</option>
-          </select>
-        </div>
-        <div class="options">
-          <label for="to">To : </label>
-          <select class="option to">
-            <option class="bin" value="binary">Binary</option>
-            <option class="oct" value="octal">Octal</option>
-            <option class="deci" value="decimal">Decimal</option>
-            <option class="hex" value="hexadecimal">Hexadecimal</option>
-          </select>
-        </div>
-        <div class="val-input">
-          <label for="input">Enter Value to Convert</label>
-          <input type="text" name="" id="input" />
-        </div>
-      </div>
 
-      <div class="output">
-        <label for="result">Converted Value </label>
-        <input type="text" name="" id="result" disabled />
+        <div class="output">
+          <label for="result">Converted Value </label>
+          <input type="text" name="" id="result" disabled />
+        </div>
       </div>
     </div>
     <script src="/number-base-converter/script.js"></script>

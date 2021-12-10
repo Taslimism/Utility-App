@@ -51,7 +51,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .container {
+  .num-container {
     margin: 50px 0px;
   }
   .input {
