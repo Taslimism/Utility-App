@@ -16,11 +16,11 @@ decoder.addEventListener('click', () => {
 })
 
 enc64.addEventListener('click', () => {
-    result.textContent = btoa(input.value);
+    result.textContent = btoa(url.value);
 
 })
 dec64.addEventListener('click', () => {
-    result.textContent = atob(input.value);
+    result.textContent = atob(url.value);
 
 })
 

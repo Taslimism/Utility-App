@@ -14,12 +14,12 @@ window.addEventListener('load', () => {
     })
     rgb.addEventListener('input', () => {
         document.body.style.backgroundColor = rgb.value;
-        
-            hex.value = rgbToHex(rgb.value);
-            rgb.style.color = hexToRgb(hex.value)[1];
-            
-            hex.style.color = hexToRgb(hex.value)[1];
-        
+
+        hex.value = rgbToHex(rgb.value);
+        rgb.style.color = hexToRgb(hex.value)[1];
+
+        hex.style.color = hexToRgb(hex.value)[1];
+
 
         if (rgb.value === '') {
             hex.value = '';
@@ -50,7 +50,7 @@ const rgbToHex = (rgb) => {
         let hex = rgb.match(/\d+/g).map(each => {
             return parseInt(each).toString(16).padStart(2, 0).toUpperCase();
         });
-        
+
 
         return `#${hex.join('')}`;
     }
